@@ -1,88 +1,97 @@
-*{
+/* Reseta margens e padding */
+* {
     margin: 0;
     padding: 0;
-
+    box-sizing: border-box;
 }
 
-body{
-    font-family: arial, sans-serif;
-    background-image:linear-gradient(460deg, #34130E, #19027c) !important;
-
+body {
+    font-family: Arial, sans-serif;
+    background-image: linear-gradient(460deg, #34130E, #19027c);
+    color: white; /* Define a cor padrão do texto */
 }
 
-header{ 
-    color: white;
+/* Estilo do header */
+header {
     text-align: center;
     padding: 1em;
+    margin: 1em;
+}
+
+/* título  */
+.txt-titulo {
+    font-size: 3em;
+    font-family: cursive;
     
 }
 
-.txt-titulo{
-    font-size: 260%;
-    padding: 1em;
-    font-family: cursive;
-}
-
-footer{
+/* Estilo do footer */
+footer {
     background-color: #313131;
     color: white;
     text-align: center;
     padding: 1em;
 }
-    
 
-
-.img-eu2{
-    width: 30%;
-    border-radius: 48%;
-
+/* imagem de perfil */
+.img-eu2 {
+    max-width: 120px;
+    border-radius: 50%;
 }
 
-.conteudo{
-    width: 115% !important;
+/* Estilo dos itens de conteúdo */
+.conteudo {
+    width: 100%; /* Corrige a largura do conteúdo para caber no layout */
     background-color: rgba(255, 255, 255, 0);
+    border: 2px solid #fff;
+    padding: 1em;
+    margin: 1em 0;
+    border-radius: 12em; /* Ajusta o arredondamento do border */
+}
+
+/* Estilo principal do conteúdo */
+.principal {
+    text-align: center;
+    padding: 2em;
+    margin-left: 25%;
+    margin-right: 25%;
+}
+
+/* Estilo das imagens de ícones */
+.img-icone {
+    width: 200%; /* Ajusta a largura da imagem conforme o container */
+}
+
+/* Estilo dos textos dos ícones */
+.txt-icone {
+    font-size: 2em;
+    color: white;
+    padding: 0.5em;
     
-    border: 2px solid rgb(255, 255, 255);
-    padding: 1em !important;
-    margin-top: 4em !important;
-    border-radius: 4em !important;
-   
 }
 
-.principal{
-    text-align: center !important;
-    margin-left: 25% !important;
-    margin-right: 25% !important;
-    margin-top: 1% !important;
-    margin-bottom: 30% !important;
-   
-
-
+/* Estilo dos links */
+a {
+    text-decoration: none;
+    color: inherit; /
 }
 
-.img-icone{
-    width: 140% !important;
-
-    
-}
-
-.txt-icone{
-    font-size: 300% !important;
-    color: white !important;
-    border-radius: 2px solid rgb(255, 255, 255) !important;
-}
-
-a{
-    text-decoration: none !important;
-    color: black !important;
-}
-
-
-@media (min-width: 200px) and (max-width: 768px){
-    .img-icone{
-        width: 500% !important;
+/* Estilos responsivos */
+@media (max-width: 768px) {
+    .img-icone {
+        width: 100% !important; /* Ajusta a largura da imagem em dispositivos móveis */
     }
-    .txt-icone{
-        font-size: 120% !important;
+
+    .txt-icone {
+        font-size: 1.5em; /* Reduz o tamanho da fonte em dispositivos móveis */
+    }
+
+    header {
+        margin: 0.5em 0;
+    }
+
+    .principal {
+        margin: 1em auto;
+        padding: 1em;
     }
 }
